@@ -14,7 +14,7 @@ module.exports = defineConfig({
     },
     admin: {
       // Especifica la ruta donde están los archivos estáticos del admin
-      path: "dist/public", // Cambia esto si index.html está en otra carpeta
+      path: "dist/public/admin", // Cambia esto si index.html está en otra carpeta
     },
   },
   modules: [
