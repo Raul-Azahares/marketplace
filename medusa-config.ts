@@ -11,11 +11,15 @@ module.exports = defineConfig({
       authCors: process.env.AUTH_CORS!,
       jwtSecret: process.env.JWT_SECRET || "supersecret",
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
-    }
+    },
+    admin: {
+      // Especifica la ruta donde están los archivos estáticos del admin
+      path: "dist/public", // Cambia esto si index.html está en otra carpeta
+    },
   },
   modules: [
     {
       resolve: "./src/modules/marketplace",
-    }
-  ]
+    },
+  ],
 })
